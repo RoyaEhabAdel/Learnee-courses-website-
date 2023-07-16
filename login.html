@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+    <title>Phishing detector</title>
+</head>
+
+<body>
+    
+    <div class="title">
+    <h1 class="logo_name"><a href="index.html" style="text-decoration: none; color: black; font-size: 40px; margin-left: 25px;">Phishing<span>less</span></a></h1>
+    <h3 class="des" style="margin-bottom: 30px;">Click here to go back to home</h3>
+    </div>
+    <section >
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="">
+	<h1 class="create">Create Account</h1>
+	
+	<br>
+	<input type="text" name="name" placeholder="Name" required>
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
+	<button class="signbtn">SignUp</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form action="#">
+        <h1 class="log">Log In</h1><br>
+		
+	
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
+	<a href="#">Forgot Your Password</a>
+
+	<button class="logbtn">Log In</button>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1 class="welcome">Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<button class="ghost" id="signIn">LogIn</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1 class="hello">Hello, Friend!</h1>
+			<p>Enter your details and start journey with us</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+	</div>
+</div>
+</div>
+    </section>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>

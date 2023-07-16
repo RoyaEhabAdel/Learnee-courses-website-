@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: sans-serif;
+    align-items: center;
+}
+.navbar{
+    background-color: #4F2711;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.logo_name{
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 120px;
+    cursor: pointer;
+}
+.logo_name span{
+    color: #C42E26;
+    font-size: 26px;
+}
+.logo_name a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    color: #DFCABF;
+}
+.navbar ul li{
+    padding: 20px;
+     list-style:none;
+    display: inline-block;
+    margin: ;
+    color: #DFCABF;
+}
+.navbar ul li a{
+    color: #DFCABF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: darkorange;
+}
+.loginbtn{
+    background-color: darkorange;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.4s;
+
+}
+.loginbtn:hover{
+    background-color: white;
+    color: darkorange;
+
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    
+}
+.header-content{
+    margin-bottom: 150px;
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 220px;;
+}
+.checkbtn{
+    background-color: #C42E26;
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.
+.container{
+   display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.headercourse{
+    margin-top: 150px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 4px solid darkorange;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h4{
+    font-size: 3vmin;
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.row .col a{
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+p{
+    color: darkblue;
+    padding: 0px;
+    font-size: 12px;
+    text-align: center;
+}
+.explore{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: -350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.explore1{
+    margin-bottom: 150px;
+    color: black;
+    text-align: left;
+    background-image: url(Online-Learning-During-Lockdown.jpg);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.explore1 h1{
+    font-size: 43px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+.explore1 h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.btn{
+    padding: 8px 15px;
+    background: #e38324;
+    border-radius: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    transition: all 0.4s;
+    margin-left: 50px;
+}
+.btn:hover{
+    color: darkorange;
+    background-color: antiquewhite;
+}
+
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  align-content: center;
+}
+.card-content{
+    align-items: center;
+    background-color: darkorange;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+}
+.image-content{
+  position: relative
+  padding: 25px 0;
+}
+
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid darkorange;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: darkorange;
+  padding: 8px 16px;
+  background-color: #DFCABF;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  border-color: aliceblue;
+    
+}
+.button:hover{
+  background-color: antiquewhite;
+}
+
+
+.wraper{
+    display: flex;
+    width: 100%;
+    margin: 30px;
+}
+.card-slide{
+    margin: 50px;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.popular-content{
+    margin-bottom: 150px;
+    color: black;
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.popular-content h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.more-topics{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.flex-popular{
+    display: flex;
+}
+.popular-content1{
+    width: 450px;
+}
+.popular-content2{
+    width: 450px;
+}
+.popular-content3{
+    width: 450px;
+}
+.cs{
+    margin-bottom: 100px;
+}
+.Busi{
+    margin-bottom: 100px;
+}
+.Hum{
+    margin-bottom: 100px;
+}
+.popular-content a{
+    text-decoration: none;
+}
+.popular-content a:hover{
+    color: darkorchid;
+}
+.loginbtn{
+    padding: 8px 15px;
+    background: #e38324;
+    border-radius: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #DFCABF;
+    font-size: 19px;
+    transition: all 0.4s;
+    margin-left: 50px;
+}
+.loginbtn:hover{
+    background-color: #DFCABF;
+    color: brown;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row2{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col1{
+	list-style: none;
+}
+.footer{
+	background-color: beige;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: brown;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: chocolate;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: brown;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #DFCABF;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.loginbtn{
+    background-color: darkorange;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.4s;
+
+}
+.loginbtn:hover{
+    background-color: white;
+    color: darkorange;
+
+}
+.card-content .bx{
+    color: white;
+    font-size: 20px;
+}
+.card-content .bx:hover{
+    color: #4F2711;
+}

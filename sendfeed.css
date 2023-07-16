@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: sans-serif;
+    align-items: center;
+}
+.navbar{
+    background-color: #4F2711;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.logo_name{
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 120px;
+    cursor: pointer;
+}
+.logo_name span{
+    color: #C42E26;
+    font-size: 26px;
+}
+.logo_name a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    color: #DFCABF;
+}
+.navbar ul li{
+    padding: 20px;
+     list-style:none;
+    display: inline-block;
+    margin: ;
+    color: #DFCABF;
+}
+.navbar ul li a{
+    color: #DFCABF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: darkorange;
+}
+.loginbtn{
+    background-color: darkorange;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.4s;
+
+}
+.loginbtn:hover{
+    background-color: white;
+    color: darkorange;
+
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    
+}
+.header-content{
+    margin-bottom: 150px;
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.header-content h2{
+    font-size: 20px;;
+}
+
+.checkbtn{
+    background-color: darkorange;
+    color: white;
+    font-size: 25px;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.sendbtn{
+    margin-top: 20px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Learnee</title>
+    <link rel="script" href="learnee.js">
+
+</head>
+<script src="learnee.js"></script>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo_name"><a href="index.html">Learn<span>ee</span></a></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="busi.html">Learnee Business</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="login.html" class="loginbtn">Log In</a>
+    </nav>
+    <section class="content">
+    <div class="sidenav" id="section-1">
+        <ul>
+      <li style="padding-top:100px;" onclick="show1()" >Personal Info</li>
+      <li onclick="show2()">ToDo List</li>
+      <li onclick="show3()">Saved Courses</li>
+      <li onclick="show4()">My Courses</li>
+      <Li onclick="show5()">My Certificates</Li>
+      </ul>
+    </div>
+    
+    <section class="subsection" id="subsection">
+    <div class="mainper" id="myDIV1">
+        
+        <h1 id="hst">Personal Info</h1>
+        <h3 id="hrd">Change Name:</h3>
+        <input type="text" class="field" name="pname" placeholder="Name...">
+        <input type="submit" class="submit-btn" name="submit" value="submit">
+        <h3>Change Password</h3>
+        <input type="password" class="field" placeholder="New password...">
+        <input type="password" class="field" placeholder="Confirm password">
+        <input type="submit" class="submit-btn" name="submit" value="submit">
+
+    </div>
+    </section>
+    <section class="subsection" id="subsection">
+            
+            <div id="myDIV2" class="mainper">
+                <div id="myDIV" class="header2">
+                    <h1 style="margin-bottom: 20px;">My ToDo List</h1>
+                    <input type="text" id="myInput" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                  </div>
+                  
+                  <ul id="myUL">
+                    
+                  </ul>
+            
+    
+        </div>
+        </section>
+
+        <section class="subsection" id="subsection">
+            
+          <div id="myDIV3" class="mainper">
+            <div class="container" id="add-to-me">
+              <div class="row">
+                <div class="col">
+                  <div class="image-content">
+                  <img src="imgsrc/2786926000140821210808.webp" style="width: 250px; height: 250px;">
+                  </div>
+                  <div class="card-content">
+                  <h4>Python fundmentals</h4>
+                  <p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language</p>
+                      <button class="button"><a href="" >Learn More...</a></button>
+                      <i onclick="addFunction()" class='bx bx-bookmark' style="cursor: pointer;"></i>
+                  
+                  </div>
+              </div>
+              <div class="col">
+                <div class="image-content">
+                <img src="imgsrc/OIP%20(2).jfif" style="width: 250px; height: 250px;">
+                </div>
+                <div class="card-content">
+                <h4>Introduction to Supply chain</h4>
+                <p>the sequence of processes involved in the production and distribution of a commodity </p>
+                
+                    <button class="button"><a href="" >Learn More...</a></button>
+                    <i onclick="addFunction()" class='bx bx-bookmark' style="cursor: pointer;"></i>
+                
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </section>
+
+    <script>
+       // Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.getElementById("myDIV2").querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+} 
+    </script>
+    </body>
+    </html>
